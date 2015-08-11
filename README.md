@@ -11,3 +11,7 @@ MIT
 ### Command Log: 
 rails new TestApp
 /app/assets/npm install
+rails generate controller app
+npm install webpack -g
+npm install webpack-dev-server -g
+	currently run `webpack --config app/assets/webpack.config.js`, `rails s -b 0.0.0.0` and `webpack-dev-server --config app/assets/webpack.config.js --progress --inline`
