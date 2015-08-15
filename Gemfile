@@ -44,5 +44,7 @@ group :development, :test do
 	
 	# Add rake gem for Travis CI
 	gem 'rake'
+	
+	gem 'coveralls', require: false
 end
 
