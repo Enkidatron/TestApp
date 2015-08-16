@@ -34,5 +34,8 @@ module.exports = {
 			{ test: /\.coffee$/, loader: "coffee"},
 			{ test: /\.json$/, loader: "json-loader"}
 		]
-	}
+	},
+	
+	devtool: 'eval-source-map'
 };
+

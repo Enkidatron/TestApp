@@ -31,3 +31,11 @@ module.exports = {
 		]
 	}
 };
+
+const devBuild = (typeof process.env.BUILDPACK_URL) === 'undefined';
+if (devBuild) {
+	console.log('Webpack dev build for Rails');
+	module.exports.devtool = 'eval-source-map';
+} else {
+	console.log('Webpack production build for Rails');
+}
