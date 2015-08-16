@@ -16,5 +16,6 @@
 !/log/.keep
 /tmp
 
-/app/assets/node_modules
+/node_modules
+/client/node_modules
 /app/assets/javascripts/generated

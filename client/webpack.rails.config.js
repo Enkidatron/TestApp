@@ -5,17 +5,11 @@ module.exports = {
 	
 	context: __dirname,
 	
-	entry: {
-		App: [
-			'webpack-dev-server/client?http://ruby-on-rails-117800.nitrousapp.com:8080/assets/',
-			'./javascripts/src/client_application.cjsx'
-		]
-	},
+	entry: './assets/javascripts/client_application.cjsx',
 	
 	output: {
 		filename: 'client-bundle.js',
-		path: __dirname + "/javascripts/generated",
-		publicPath: 'http://ruby-on-rails-117800.nitrousapp.com:8080/assets/javascripts'
+		path: __dirname + "/../app/assets/javascripts/generated"
 	},
 	
 	plugins: [
@@ -24,7 +18,7 @@ module.exports = {
 	
 	resolve: {
 		extensions: ['','.js','.jsx','.cjsx','.coffee'],
-		moduleDirectories: ["node_modules", "javascripts"]
+		moduleDirectories: ["../node_modules", "javascripts"]
 	},
 	
 	module: {

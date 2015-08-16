@@ -14,4 +14,4 @@ rails new TestApp
 rails generate controller app
 npm install webpack -g
 npm install webpack-dev-server -g
-	currently run `webpack --config app/assets/webpack.config.js`, `rails s -b 0.0.0.0` and `webpack-dev-server --config app/assets/webpack.config.js --progress --inline`
+	currently run `webpack --config client/webpack.rails.config.js --progress --inline -w`, `rails s` and `webpack-dev-server --config client/webpack.hot.config.js --progress --inline -w`
