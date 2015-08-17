@@ -1,9 +1,9 @@
-# React = require 'react'
+require 'bootstrap-webpack'
 
-alert "hello from coffeescriptland"
-console.log "console"
-window.test = {
-	hello: "hello",
-	goodbye: "goodbye",
-	third: "most low"
-}
+React = require 'react'
+Router = require 'react-router'
+routes = require 'routes'
+
+Router.run routes, (Handler) ->
+	React.render(<Handler />, document.getElementById("reactContent"))
+	

@@ -19,10 +19,16 @@
 		"cjsx-loader": "*",
 		"coffee-loader": "*",
 		"json-loader": "*", 
-		"coffee-script": "~1.9.3",
-		"react": "~0.13"
+		"file-loader": "*",
+		"url-loader": "*",
+		"coffee-script": "~1.9.3"
 	},
 	"dependencies": {
-		
+		"react": "*",
+		"react-router": "*",
+		"react-bootstrap": "*",
+		"react-router-bootstrap": "*",
+		"bootstrap-webpack": "*",
+		"jquery": "*"
 	}
 }
